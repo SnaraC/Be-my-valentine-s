@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">HI LOVE! DO YOU WANT TO SEE SOMETHING? CLICK DOWN THERE </h1>
+        <button id="click-button" class="btn" onclick="showNext()">Click Me!</button>
+    </div>
+
+    <div id="next-screen" class="container" style="display: none;">
+        <h1 class="title">Will you be my Valentine?</h1>
+        <button id="yes-button" class="btn" onclick="showResponse('yes')">Yes</button>
+        <button id="no-button" class="btn" onclick="showResponse('no')">No</button>
+    </div>
+
+    <div id="response-screen" class="container" style="display: none;">
+        <h1 class="response" id="response-message"></h1>
+        
+        <!-- Image shown when Yes is clicked -->
+        <img id="funny-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHDdZSe21JH5OP5OKmd6BivAmD13OflNcDw&s" alt="Funny Picture for Yes" style="display:none; width: 300px; margin-top: 20px;">
+
+        <!-- Image shown when No is clicked -->
+        <img id="sad-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kfxoQeBSGC0Gfbly1eRzym3opfLhy1vW-w&s" alt="Sad Picture for No" style="display:none; width: 300px; margin-top: 20px;">
+
+        <button id="back-button" class="btn" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
