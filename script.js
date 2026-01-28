@@ -18,7 +18,7 @@ function showResponse(answer) {
         responseMessage.innerHTML = "I Love You!";
         funnyImage.style.display = "block"; // Show the funny picture for Yes
     } else {
-        responseMessage.innerHTML = "I AM SORRY, BUT YOU STILL NEED TO GO WITH ME. I AM KIDNAPPING YOU :D";
+        responseMessage.innerHTML = "Oh no!"; // Message for No
         sadImage.style.display = "block"; // Show the sad picture for No
     }
 
@@ -29,5 +29,5 @@ function showResponse(answer) {
 // Function to go back to the initial state
 function goBack() {
     document.getElementById("response-screen").style.display = "none"; // Hide the response screen
-    document.getElementById("click-button").style.display = "block"; // Show the "Click Me" button again
+    document.getElementById("next-screen").style.display = "block"; // Show the next screen with Yes and No buttons
 }
